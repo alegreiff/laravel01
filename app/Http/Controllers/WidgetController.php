@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TestController extends Controller
+class WidgetController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,10 +13,7 @@ class TestController extends Controller
      */
     public function index()
     {
-    $beatles = ['John', 'Paul', 'George', 'Ringo'];
-    //alert()->overlay('Listen', 'I hear beatle music!', 'success');
-    alert()->error('Problem', 'No escucho ni mierda');
-    return view('test.index', compact('beatles'));
+        //
     }
 
     /**
@@ -26,7 +23,7 @@ class TestController extends Controller
      */
     public function create()
     {
-        //
+        return view('widget.create');
     }
 
     /**
